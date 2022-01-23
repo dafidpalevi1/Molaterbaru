@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molla Store</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <img src="image/molla.png" alt=""> </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="blog.html">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- Bottom Navbar -->
+<nav class="navbar navbar-dark bg-info navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom">
+    <ul class="navbar-nav nav-justified w-100">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">
+            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg>
+              <span class="small d-block">Beranda</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              </svg>
+              <span class="small d-block">Feed</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z"/>
+              </svg>
+              <span class="small d-block">Molla</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg>
+              <span class="small d-block">Notifikasi</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="login.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+              <span class="small d-block">Saya</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Hello,Sobat!! <span>MOLLA STORE</span> Klik,Temukan,
+          Tentukan</h3>
+        <p>Belanja Lebih Murah Hanya Ada di Toko Online Molla Store Yuk Buruan Beli Sekarang Juga.</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- jenis sale -->
+<section id="jenis-sale" class="section-p1">
+
+    <div class="row mx-0 jenis-sale">
+        <div class="d-flex justify-content-between w-100">
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/ae2620ecee6471a9591ba310feb831be_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Molla Store</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/fe02a504f64b146f90af16947ae65d08_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Produk 100% Original</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/5164f9b1e9319def7e609101eb3c9349_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Pulsa, Tagihan &amp; Hiburan</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/4447bdcba3c51c693feef4f22ba05c49_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Fashion</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/d38815fe0e030e787cf2e0508d3e8c80_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Molla Super Market</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/12c9571aaf93404afaaf9b46ef2bb345_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Bayar di Tempat</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/4e08bce7d8d6ab488b82ab59d03cb793_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Murah Lebay</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/4497ac7ff3ee9711a8d512d0f8297b49_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Gratis Ongkir &amp; Voucher</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/e14301aa0ad57dcb82e08564d799f83a_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Promo Bank</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="wrap-img">
+              <a href="#"><img src="https://cf.shopee.co.id/file/60434906cac999e73fdcc78c8f484467_xhdpi" alt="" /></a>
+            </div>
+            <p class="mb-0 mt-2">Semua Promo</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Karegory -->
+  <section id="kategory" class="section-p1">
+    <div class="row mx-0 mt-4 kategory">
+      <h5 class="p-4">KATEGORY</h5>
+      <div class="d-flex">
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/02577b74fe168f6dabd57eab9c2f8f21_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">
+            Elektronik</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/1c2d1181b1f5306ce2c41803617e7446_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Komputer & Aksesoris</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/5bbc23650006cd766b8838f55d53aac7_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Handphone & Aksesoris</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/04dba508f1ad19629518defb94999ef9_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Pakaian Pria</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/8465b33b83d571b2dbac57481622002e_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Sepatu Pria</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/7dea4bb643bfb14ac71e46cd4e5740ad_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Tas Pria</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/1f18bdfe73df39c66e7326b0a3e08e87_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Aksesoris Fashion</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/dc4d827babe0d4215dfcf287dd277507_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Jam Tangan</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/f9490654e54dc56e308cda4f6d86e840_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Kesehatan</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/61a7b80e42a3d272d170954c76ab84a7_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Hobi & Koleksi</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/b912e9726dc8cb5e9447a7738a68479c_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Makanan & Minuman</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/fd68904a717156196d809cab264a4f4e_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Perawatan & Kecantikan</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/962e5544f481d1032bd1dfd3137c4355_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Perlengkapan Rumah</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/23918f8dacba18c938fe42d13aa31b57_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Pakian Wanita</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/b98756cdb31eabe3d7664599e24ccc29_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Fashion Muslim</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/9251edd6d6dd98855ff5a99497835d9c_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Fashion Bayi & Anak</p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/c808f51e19db257047e506cecab648f3_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Ibu & Bayi</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/3e5c1658eb48c7bad36b8a431d8af827_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Sepatu Wanita</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/bf4c3ac88a7d12b29a5d617ee0c63d9f_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Tas Wanita</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+        <div class="d-flex flex-column align-items-center card-kategory">
+          <div class="wrap-img">
+            <a href="#"><img class="w-100 h-100" src="https://cf.shopee.co.id/file/27838b968afb76ca59dd8e8f57ece91f_tn" alt="" /></a>
+          </div>
+          <p class="mb-0 text-center mt-2">Otomotif</p>
+          <p class="mb-0 text-center"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- flash sale -->
+<section id="flash-sale" class="section-p1">
+  <div class="swiper product-slider">
+
+    <div class="swiper-wrapper">
+    <div class="row mx-0 sale mt-4">
+        <div class="d-flex px-4 pt-4">
+          <h5 class="mr-5">FLASH SALE</h5>
+          <span>00</span>
+          <span class="ml-3">00</span>
+          <span class="ml-3">00</span>
+        </div>
+        <div class="row mx-0 mt-4 row-card">
+          <div class="col-2 h-100 position-relative">
+            <div
+              class="swiper-slide box"
+            >
+              <div class="diskon">
+                <span class="font-weight-bold" style="color: #f53d2d"
+                  >35%</span
+                >
+                <span class="text-white font-weight-bold">OFF</span>
+              </div>
+              <div class="swiper-slide box">
+                <a href="#"><img class="w-100 h-100" src="image/products/flash1.png" alt="" /></a>
+              </div>
+              <div class="total w-100">
+                <div class="text">
+                  <span>Rp</span>
+                  <span>175.000</span>
+                </div>
+                <div class="progresss">
+                  <span> 1 TERJUAL</span>
+                  <div class="progress-on"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 h-100 position-relative">
+            <div
+              class="swiper-slide box"
+            >
+              <div class="diskon">
+                <span class="font-weight-bold" style="color: #f53d2d"
+                  >35%</span
+                >
+                <span class="text-white font-weight-bold">OFF</span>
+              </div>
+              <div class="swiper-slide box">
+                <a href="#"><img class="w-100 h-100" src="image/products/flash2.png" alt="" /></a>
+              </div>
+              <div class="total w-100">
+                <div class="text">
+                  <span>Rp</span>
+                  <span>175.000</span>
+                </div>
+                <div class="progresss">
+                  <span> 1 TERJUAL</span>
+                  <div class="progress-on"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 h-100 position-relative">
+            <div
+              class="swiper-slide box"
+            >
+              <div class="diskon">
+                <span class="font-weight-bold" style="color: #f53d2d"
+                  >35%</span
+                >
+                <span class="text-white font-weight-bold">OFF</span>
+              </div>
+              <div class="swiper-slide box">
+                <a href="#"><img class="w-100 h-100" src="image/products/flash3.png" alt="" /></a>
+              </div>
+              <div class="total w-100">
+                <div class="text">
+                  <span>Rp</span>
+                  <span>175.000</span>
+                </div>
+                <div class="progresss">
+                  <span> 1 TERJUAL</span>
+                  <div class="progress-on"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 h-100 position-relative">
+            <div
+              class="swiper-slide box"
+            >
+              <div class="diskon">
+                <span class="font-weight-bold" style="color: #f53d2d"
+                  >35%</span
+                >
+                <span class="text-white font-weight-bold">OFF</span>
+              </div>
+              <div class="swiper-slide box">
+                <a href="#"><img class="w-100 h-100" src="image/products/flash4.png" alt="" /></a>
+              </div>
+              <div class="total w-100">
+                <div class="text">
+                  <span>Rp</span>
+                  <span>175.000</span>
+                </div>
+                <div class="progresss">
+                  <span> 1 TERJUAL</span>
+                  <div class="progress-on"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 h-100 position-relative">
+            <div
+              class="swiper-slide box"
+            >
+              <div class="diskon">
+                <span class="font-weight-bold" style="color: #f53d2d"
+                  >35%</span
+                >
+                <span class="text-white font-weight-bold">OFF</span>
+              </div>
+              <div class="swiper-slide box">
+                <a href="#"><img class="w-100 h-100" src="image/products/flash5.png" alt="" /></a>
+              </div>
+              <div class="total w-100">
+                <div class="text">
+                  <span>Rp</span>
+                  <span>175.000</span>
+                </div>
+                <div class="progresss">
+                  <span> 1 TERJUAL</span>
+                  <div class="progress-on"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 h-100 position-relative">
+            <div
+              class="swiper-slide box"
+            >
+              <div class="diskon">
+                <span class="font-weight-bold" style="color: #f53d2d"
+                  >35%</span
+                >
+                <span class="text-white font-weight-bold">OFF</span>
+              </div>
+              <div class="swiper-slide box">
+                <a href="#"><img class="w-100 h-100" src="image/products/flash6.png" alt="" /></a>
+              </div>
+              <div class="total w-100">
+                <div class="text">
+                  <span>Rp</span>
+                  <span>175.000</span>
+                </div>
+                <div class="progresss">
+                  <span> 1 TERJUAL</span>
+                  <div class="progress-on"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Produk <span>Sepatu</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/products/s1.jpg" alt="">
+                <h3>Vans Old Skool Motif Thrasher Merah</h3>
+                <div class="price">Rp.150.000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="sproduct.html" class="btn">Beli Sekarang</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/products/s2.jpg" alt="">
+                <h3>Sepatu Vans Slip On Hitam</h3>
+                <div class="price">Rp.150.000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/products/s3.jpg" alt="">
+                <h3>Vans Authentic Sneakers White</h3>
+                <div class="price">Rp.150.000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/products/s4.jpg" alt="">
+                <h3>Vans Sk8 Skate High Pro X Motif Flame On Fire Api</h3>
+                <div class="price">Rp.150.000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/products/s5.jpg" alt="">
+              <h3>Vans Slip On Checker Flame Shoes Merah Api</h3>
+              <div class="price">Rp.150.000</div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">Beli Sekarang</a>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="swiper product-slider">
+
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide box">
+              <img src="image/products/s6.jpg" alt="">
+              <h3>Vans Old Skool Biru Navy</h3>
+              <div class="price"> Rp.150.000 </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">Beli Sekarang</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/products/s2.jpg" alt="">
+              <h3>fresh onion</h3>
+              <div class="price">Rp.150.000</div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">Beli Sekarang</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/products/s3.jpg" alt="">
+              <h3>fresh meat</h3>
+              <div class="price">Rp.150.000</div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">Beli Sekarang</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/products/s4.jpg" alt="">
+              <h3>fresh cabbage</h3>
+              <div class="price">Rp.150.000</div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">Beli Sekarang</a>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div class="swiper product-slider">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+            <img src="image/products/s1.jpg" alt="">
+            <h3>fresh orange</h3>
+            <div class="price">Rp.150.000</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="image/products/s2.jpg" alt="">
+            <h3>fresh onion</h3>
+            <div class="price">Rp.150.000</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="image/products/s3.jpg" alt="">
+            <h3>fresh meat</h3>
+            <div class="price">Rp.150.000</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="image/products/s4.jpg" alt="">
+            <h3>fresh cabbage</h3>
+            <div class="price"> $4.99/- - 10.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="swiper product-slider">
+      <h1 class="heading"> Produk <span>Tas</span> </h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="image/product-5.png" alt="">
+                <h3>fresh potato</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-6.png" alt="">
+                <h3>fresh avocado</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-7.png" alt="">
+                <h3>fresh carrot</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-8.png" alt="">
+                <h3>green lemon</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="image/product-5.png" alt="">
+                <h3>fresh potato</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-6.png" alt="">
+                <h3>fresh avocado</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-7.png" alt="">
+                <h3>fresh carrot</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-8.png" alt="">
+                <h3>green lemon</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="swiper product-slider">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+              <img src="image/product-5.png" alt="">
+              <h3>fresh potato</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/product-6.png" alt="">
+              <h3>fresh avocado</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/product-7.png" alt="">
+              <h3>fresh carrot</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/product-8.png" alt="">
+              <h3>green lemon</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+      </div>
+  </div>
+    
+    <div class="swiper product-slider">
+      <h1 class="heading"> Produk <span>Sendal</span> </h1>
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide box">
+              <img src="image/product-5.png" alt="">
+              <h3>fresh potato</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/product-6.png" alt="">
+              <h3>fresh avocado</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/product-7.png" alt="">
+              <h3>fresh carrot</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="image/product-8.png" alt="">
+              <h3>green lemon</h3>
+              <div class="price"> $4.99/- - 10.99/- </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+          
+
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+  
+            <div class="swiper-slide box">
+                <img src="image/product-5.png" alt="">
+                <h3>fresh potato</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+  
+            <div class="swiper-slide box">
+                <img src="image/product-6.png" alt="">
+                <h3>fresh avocado</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+  
+            <div class="swiper-slide box">
+                <img src="image/product-7.png" alt="">
+                <h3>fresh carrot</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+  
+            <div class="swiper-slide box">
+                <img src="image/product-8.png" alt="">
+                <h3>green lemon</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            
+  
+        </div>
+
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+    
+              <div class="swiper-slide box">
+                  <img src="image/product-5.png" alt="">
+                  <h3>fresh potato</h3>
+                  <div class="price"> $4.99/- - 10.99/- </div>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">add to cart</a>
+              </div>
+    
+              <div class="swiper-slide box">
+                  <img src="image/product-6.png" alt="">
+                  <h3>fresh avocado</h3>
+                  <div class="price"> $4.99/- - 10.99/- </div>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">add to cart</a>
+              </div>
+    
+              <div class="swiper-slide box">
+                  <img src="image/product-7.png" alt="">
+                  <h3>fresh carrot</h3>
+                  <div class="price"> $4.99/- - 10.99/- </div>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">add to cart</a>
+              </div>
+    
+              <div class="swiper-slide box">
+                  <img src="image/product-8.png" alt="">
+                  <h3>green lemon</h3>
+                  <div class="price"> $4.99/- - 10.99/- </div>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">add to cart</a>
+              </div>
+              
+    
+          </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/features/f1.png" alt="">
+            <h3>vegitables</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/features/f2.png" alt="">
+            <h3>fresh fruits</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/features/f3.png" alt="">
+            <h3>dairy products</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/features/f4.png" alt="">
+            <h3>fresh meat</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/features/f5.png" alt="">
+          <h3>fresh meat</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+      </div>
+
+      <div class="box">
+        <img src="image/features/f6.png" alt="">
+        <h3>fresh meat</h3>
+        <p>upto 45% off</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> Molla <span>Store</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/features/f1.png" alt="">
+            <h3>fresh and organic</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/features/f2.png" alt="">
+            <h3>free delivery</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/features/f3.png" alt="">
+            <h3>easy payments</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="image/features/f4.png" alt="">
+          <h3>easy payments</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="image/features/f5.png" alt="">
+        <h3>easy payments</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="box">
+      <img src="image/features/f6.png" alt="">
+      <h3>easy payments</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+      <a href="#" class="btn">read more</a>
+  </div>
+
+
+
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>Kini Belanja Online Lebih Mudah Dengan Adanya Molla Store.</p>
+                <h3>Mamat</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>Sungguh Luar Biasa Website Karya Anak Lokal Patut Diapresiasi.</p>
+                <h3>Ajid</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>Saya Bangga Kini Sudah Ada Website Toko Online Yang Ada di Sibolga Tapanuli Tengah.</p>
+                <h3>Amien</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Terlihat Menarik Tentu Saja Sangat Perlu Yuk Mari Belanja di Molla Store.</p>
+                <h3>Bollo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> <img src="image/molla.png" alt=""> </h3>
+            <p>Belanja Lebih Murah Hanya Ada </br>di Molla Store Klik,Temukan,Tentukan.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2833-6117 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2833-6117 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> mollastore@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Jl. Padang Sidempuan 499-521, Aek Parombunan, Sibolga Sel., Kota Sibolga, Sumatera Utara 22524 Kota Sibolga, Sumatera Utara 22524 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> Dafid Palevi </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
